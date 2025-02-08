@@ -1,6 +1,6 @@
 ---
 title: NeoWell Aesthetics
-publishDate: 2024-03-10 00:00:00
+publishDate: 2025-01-10 00:00:00
 img: /assets/work/neowell.jpg
 img_alt: NeoWell Aesthetics website showcasing their services
 description: |

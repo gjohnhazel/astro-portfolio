@@ -1,8 +1,14 @@
 ---
-title: "Ice Barrel Automation"
-date: 2024-01-01
-description: "Automation and efficiency improvements for Ice Barrel."
+title: Ice Barrel Automation
+publishDate: 2025-01-12 00:00:00
 img: /assets/work/icebarrel.jpg
+img_alt: Ice Barrel
+description: |
+  Automation and efficiency improvements for Ice Barrel.
+tags:
+  - Automation
+  - Efficiency
+  - Zendesk
 ---
 
 ## Project Overview
