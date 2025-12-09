@@ -183,22 +183,12 @@ import Hero from '../components/Hero.astro';
 					</div>
 				</div>
 			</section>
-
-			<!-- Testimonials (Optional placeholder) -->
-			<section class="section with-background bg-variant">
-				<header class="section-header stack gap-2 lg:gap-4">
-					<h2>What clients say</h2>
-				</header>
-				<div class="content">
-					<p class="testimonial-placeholder">Placeholder text until testimonials are added.</p>
-				</div>
-			</section>
 		</main>
 
 		<!-- Final CTA Section -->
 		<section class="final-cta">
 			<div class="wrapper">
-				<h2>Ready to help your team work smarter with AI?</h2>
+				<h2>Ready to help your team work smarter with AI?</h2><br/>
 				<div class="cta-buttons">
 					<CallToAction href="mailto:john@johnhazel.com?subject=AI Consulting Discovery Call">
 						Book a Discovery Call
@@ -562,6 +552,10 @@ import Hero from '../components/Hero.astro';
 		max-width: 30rem;
 	}
 
+	.cta-buttons :global(a) {
+		font-size: var(--text-md);
+	}
+
 	@media (min-width: 50em) {
 		.final-cta {
 			padding: 7.5rem;
@@ -574,6 +568,10 @@ import Hero from '../components/Hero.astro';
 		.cta-buttons {
 			flex-direction: row;
 			justify-content: center;
+		}
+
+		.cta-buttons :global(a) {
+			font-size: var(--text-lg);
 		}
 	}
 </style>
