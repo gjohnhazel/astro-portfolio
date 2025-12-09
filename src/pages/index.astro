@@ -57,6 +57,38 @@ const projects = (await getCollection('work'))
 		<main class="wrapper stack gap-20 lg:gap-48">
 			<section class="section with-background with-cta">
 				<header class="section-header stack gap-2 lg:gap-4">
+					<h3>AI Consulting & Team Enablement</h3>
+					<p class="subhead">Helping teams work smarter and scale their capacity by integrating AI into daily operations.</p>
+					<p>I train teams, build practical workflows, and guide organizations through adopting AI in a simple, sustainable way. From one workflow at a time to ongoing enablement, Hazelize helps your team get more done with less frustration.</p>
+				</header>
+
+				<div class="gallery">
+					<Grid variant="small">
+						<li class="ai-card">
+							<h4>AI Readiness Audit</h4>
+							<p>Understand exactly where AI fits and what to do first.</p>
+						</li>
+						<li class="ai-card">
+							<h4>Workflow Build</h4>
+							<p>Implement a single high-impact workflow your team can use immediately.</p>
+						</li>
+						<li class="ai-card">
+							<h4>Ongoing Enablement</h4>
+							<p>Training, shadowing, and iterative support as your team builds AI capability.</p>
+						</li>
+					</Grid>
+				</div>
+
+				<div class="cta">
+					<CallToAction href="/ai-consulting/">
+						View AI Consulting Packages
+						<Icon icon="arrow-right" size="1.2em" />
+					</CallToAction>
+				</div>
+			</section>
+
+			<section class="section with-background with-cta">
+				<header class="section-header stack gap-2 lg:gap-4">
 					<h3>Selected Work</h3>
 					<p>Take a look below at some of my featured work for clients from the past few years.</p>
 				</header>
@@ -196,6 +228,35 @@ const projects = (await getCollection('work'))
 		font-size: var(--text-2xl);
 	}
 
+	.section-header .subhead {
+		font-size: var(--text-lg);
+		font-weight: 600;
+		color: var(--gray-200);
+	}
+
+	.ai-card {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		padding: 2rem;
+		border: 1px solid var(--gray-800);
+		border-radius: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.ai-card h4 {
+		font-size: var(--text-lg);
+		margin: 0;
+		color: var(--gray-200);
+	}
+
+	.ai-card p {
+		margin: 0;
+		color: var(--gray-400);
+		font-size: var(--text-base);
+	}
+
 	@media (min-width: 50em) {
 		.section {
 			grid-template-columns: repeat(4, 1fr);
@@ -216,9 +277,26 @@ const projects = (await getCollection('work'))
 			font-size: var(--text-4xl);
 		}
 
+		.section-header .subhead {
+			font-size: var(--text-xl);
+		}
+
 		.with-cta .section-header {
 			justify-self: flex-start;
 			text-align: left;
+		}
+
+		.ai-card {
+			padding: 2.5rem;
+			border-radius: 1.5rem;
+		}
+
+		.ai-card h4 {
+			font-size: var(--text-xl);
+		}
+
+		.ai-card p {
+			font-size: var(--text-md);
 		}
 
 		.gallery {
