@@ -7,8 +7,8 @@ import Hero from '../components/Hero.astro';
 
 <BaseLayout title="AI Consulting | John Hazel" description="Hazelize helps teams boost capacity and eliminate bottlenecks by adopting practical, easy-to-use AI workflows.">
 	<div class="stack gap-20 lg:gap-48">
+	<header class="hero-section">
 		<div class="wrapper">
-			<header class="hero-section">
 				<Hero
 					title="Work Smarter. Scale Faster. Integrate AI Into Your Daily Operations."
 					tagline="Hazelize helps teams boost capacity and eliminate bottlenecks by adopting practical, easy-to-use AI workflows."
@@ -21,8 +21,8 @@ import Hero from '../components/Hero.astro';
 						</CallToAction>
 					</div>
 				</Hero>
-			</header>
-		</div>
+			</div>
+		</header>
 
 		<main class="wrapper stack gap-20 lg:gap-48">
 			<!-- What Most Teams Struggle With -->
@@ -31,36 +31,52 @@ import Hero from '../components/Hero.astro';
 					<h2>AI feels overwhelming. Your team needs clarity, not complexity.</h2>
 				</header>
 
-				<div class="content">
-					<ul class="struggles-list">
-						<li>Too many tools, not enough direction</li>
-						<li>Manual work slowing down progress</li>
-						<li>No clear plan for how AI fits into daily operations</li>
-						<li>Hesitation to adopt AI due to uncertainty or past failures</li>
-						<li>Lack of a guide who can train the team and build simple workflows</li>
-					</ul>
-					<p class="reassurance">You don't need complicated AI. You need practical systems your team actually uses.</p>
+				<div class="content-with-image image-left">
+					<img
+						src="/assets/ai-consulting/AI Consulting 2 - Problem Section Large.jpeg"
+						alt="Operational chaos and bottlenecks"
+						class="content-image-square"
+					/>
+					<div class="content-text">
+						<ul class="struggles-list">
+							<li>Too many tools, not enough direction</li>
+							<li>Manual work slowing down progress</li>
+							<li>No clear plan for how AI fits into daily operations</li>
+							<li>Hesitation to adopt AI due to uncertainty or past failures</li>
+							<li>Lack of a guide who can train the team and build simple workflows</li>
+						</ul>
+						<p class="reassurance">You don't need complicated AI. You need practical systems your team actually uses.</p>
+					</div>
 				</div>
 			</section>
 
 			<!-- How Hazelize Helps -->
 			<section class="section with-background bg-variant">
-				<header class="section-header stack gap-2 lg:gap-4">
-					<h2>A simple approach to integrating AI into your team's everyday work.</h2>
-				</header>
+				<div class="approach-header-with-image">
+					<header class="section-header stack gap-2 lg:gap-4">
+						<h2>A simple approach to integrating AI into your team's everyday work.</h2>
+					</header>
+					<img
+						src="/assets/ai-consulting/AI Consulting 3 - Simple Approach 3 Step Framework Large.jpeg"
+						alt="Simple approach framework"
+						class="approach-image-square"
+					/>
+				</div>
 
-				<div class="three-columns">
-					<div class="column">
-						<h3>1. Observe & Diagnose</h3>
-						<p>Shadowing, discovery, and an AI Readiness Audit that identifies where AI can create immediate wins.</p>
-					</div>
-					<div class="column">
-						<h3>2. Build What Matters</h3>
-						<p>One workflow at a time. Clear constraints, predictable outcomes, and hands-on training.</p>
-					</div>
-					<div class="column">
-						<h3>3. Enable & Elevate</h3>
-						<p>Ongoing coaching, refinement, and support so your team steadily becomes more capable and confident with AI.</p>
+				<div class="approach-content">
+					<div class="three-columns">
+						<div class="column">
+							<h3>1. Observe & Diagnose</h3>
+							<p>Shadowing, discovery, and an AI Readiness Audit that identifies where AI can create immediate wins.</p>
+						</div>
+						<div class="column">
+							<h3>2. Build What Matters</h3>
+							<p>One workflow at a time. Clear constraints, predictable outcomes, and hands-on training.</p>
+						</div>
+						<div class="column">
+							<h3>3. Enable & Elevate</h3>
+							<p>Ongoing coaching, refinement, and support so your team steadily becomes more capable and confident with AI.</p>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -73,6 +89,11 @@ import Hero from '../components/Hero.astro';
 
 				<div class="packages-grid">
 					<div class="package-card">
+						<img
+							src="/assets/ai-consulting/AI Consulting 4 - Package Card 1 - AI Readiness Audit Large.png"
+							alt="AI Readiness Audit"
+							class="package-image"
+						/>
 						<h3>Package 1. AI Readiness Audit</h3>
 						<p class="package-description">A focused assessment that reveals the highest-value AI opportunities in your daily operations.</p>
 						<div class="package-includes">
@@ -93,6 +114,11 @@ import Hero from '../components/Hero.astro';
 					</div>
 
 					<div class="package-card">
+						<img
+							src="/assets/ai-consulting/AI Consulting 5 - Package Card 2 - AI Workflow Build Large.png"
+							alt="AI Workflow Build"
+							class="package-image"
+						/>
 						<h3>Package 2. AI Workflow Build</h3>
 						<p class="package-description">We design and implement a single high-impact workflow that integrates AI into your daily operations.</p>
 						<div class="package-includes">
@@ -112,6 +138,11 @@ import Hero from '../components/Hero.astro';
 					</div>
 
 					<div class="package-card">
+						<img
+							src="/assets/ai-consulting/AI Consulting 6 - Package Card 3 - AI Enablement Retainer Large.png"
+							alt="AI Enablement Retainer"
+							class="package-image"
+						/>
 						<h3>Package 3. AI Enablement Retainer</h3>
 						<p class="package-description">Ongoing coaching and iterative improvements as your team builds muscle with AI.</p>
 						<div class="package-includes">
@@ -138,28 +169,35 @@ import Hero from '../components/Hero.astro';
 					<h2>Small changes. Big impact.</h2>
 				</header>
 
+			<div class="wins-content image-right">
 				<div class="wins-grid">
-					<div class="win-card">
-						<span class="checkmark">✓</span>
-						<p>Automate repetitive reporting</p>
-					</div>
-					<div class="win-card">
-						<span class="checkmark">✓</span>
-						<p>Speed up customer response times</p>
-					</div>
-					<div class="win-card">
-						<span class="checkmark">✓</span>
-						<p>Streamline internal approvals</p>
-					</div>
-					<div class="win-card">
-						<span class="checkmark">✓</span>
-						<p>Generate first-draft content instantly</p>
-					</div>
+						<div class="win-card">
+							<span class="checkmark">✓</span>
+							<p>Automate repetitive reporting</p>
+						</div>
+						<div class="win-card">
+							<span class="checkmark">✓</span>
+							<p>Speed up customer response times</p>
+						</div>
+						<div class="win-card">
+							<span class="checkmark">✓</span>
+							<p>Streamline internal approvals</p>
+						</div>
+						<div class="win-card">
+							<span class="checkmark">✓</span>
+							<p>Generate first-draft content instantly</p>
+						</div>
 					<div class="win-card">
 						<span class="checkmark">✓</span>
 						<p>Move data between tools automatically</p>
 					</div>
 				</div>
+				<img
+					src="/assets/ai-consulting/AI Consulting 7 - Small Changes. Big Impact Large.jpeg"
+					alt="Small changes, big impact"
+					class="wins-image-square"
+				/>
+			</div>
 			</section>
 
 			<!-- Why Choose Hazelize -->
@@ -168,25 +206,41 @@ import Hero from '../components/Hero.astro';
 					<h2>A partner who understands both the tech and the team.</h2>
 				</header>
 
-				<div class="three-columns">
-					<div class="column">
-						<h3>Coaching-Focused</h3>
-						<p>People adopt what they understand and trust.</p>
+				<div class="partner-content image-right">
+					<div class="partner-text">
+						<div class="three-columns">
+							<div class="column">
+								<h3>Coaching-Focused</h3>
+								<p>People adopt what they understand and trust.</p>
+							</div>
+							<div class="column">
+								<h3>Code-Empowered</h3>
+								<p>Technical depth ensures workflows actually work.</p>
+							</div>
+							<div class="column">
+								<h3>Strategy-Minded</h3>
+								<p>AI aligns with your long-term operational goals.</p>
+							</div>
+						</div>
 					</div>
-					<div class="column">
-						<h3>Code-Empowered</h3>
-						<p>Technical depth ensures workflows actually work.</p>
-					</div>
-					<div class="column">
-						<h3>Strategy-Minded</h3>
-						<p>AI aligns with your long-term operational goals.</p>
-					</div>
+					<img
+						src="/assets/ai-consulting/AI Consulting 8 - A partner who understands Large.jpeg"
+						alt="A partner who understands both tech and team"
+						class="partner-image-square"
+					/>
 				</div>
 			</section>
 		</main>
 
 		<!-- Final CTA Section -->
 		<section class="final-cta">
+			<div class="final-cta-image-wrapper">
+				<img
+					src="/assets/ai-consulting/AI Consulting 9 - Ready to help your team Large.jpeg"
+					alt="Ready to help your team"
+					class="final-cta-background-image"
+				/>
+			</div>
 			<div class="wrapper">
 				<h2>Ready to help your team work smarter with AI?</h2><br/>
 				<div class="cta-buttons">
@@ -200,13 +254,36 @@ import Hero from '../components/Hero.astro';
 			</div>
 		</section>
 
-		<ContactCTA />
+		<div class="contact-cta-wrapper">
+			<img
+				src="/assets/ai-consulting/AI Consulting 10 - Interested in working together Large.jpeg"
+				alt="Interested in working together"
+				class="contact-cta-background-image"
+			/>
+			<ContactCTA />
+		</div>
 	</div>
 </BaseLayout>
 
 <style>
 	.hero-section {
-		margin-bottom: 2rem;
+		position: relative;
+		overflow: hidden;
+		padding: 5rem 0;
+		min-height: 60vh;
+		display: flex;
+		align-items: center;
+	}
+
+	.hero-section .wrapper {
+		position: relative;
+		z-index: 1;
+		width: 100%;
+	}
+
+	.hero-section :global(.hero) {
+		position: relative;
+		z-index: 1;
 	}
 
 	.hero-ctas {
@@ -277,6 +354,29 @@ import Hero from '../components/Hero.astro';
 		font-size: var(--text-md);
 	}
 
+	.content-with-image {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		justify-self: center;
+		max-width: 1200px;
+		width: 100%;
+	}
+
+	.content-image-square {
+		width: 100%;
+		aspect-ratio: 3 / 2;
+		object-fit: cover;
+		border-radius: 1rem;
+		box-shadow: var(--shadow-md);
+		flex-shrink: 0;
+	}
+
+	.content-text {
+		color: var(--gray-200);
+		font-size: var(--text-md);
+	}
+
 	.struggles-list {
 		list-style: none;
 		padding: 0;
@@ -328,6 +428,39 @@ import Hero from '../components/Hero.astro';
 			font-size: var(--text-lg);
 		}
 
+		.content-with-image {
+			grid-area: content;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 3rem;
+			align-items: center;
+		}
+
+		.content-with-image.image-left .content-image-square {
+			order: 1;
+		}
+
+		.content-with-image.image-left .content-text {
+			order: 2;
+		}
+
+		.content-with-image.image-right .content-image-square {
+			order: 2;
+		}
+
+		.content-with-image.image-right .content-text {
+			order: 1;
+		}
+
+		.content-image-square {
+			max-width: 500px;
+			width: 100%;
+		}
+
+		.content-text {
+			font-size: var(--text-lg);
+		}
+
 		.three-columns {
 			grid-column: 1 / -1;
 		}
@@ -336,12 +469,53 @@ import Hero from '../components/Hero.astro';
 			grid-column: 1 / -1;
 		}
 
-		.wins-grid {
+		.partner-content {
 			grid-column: 1 / -1;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 3rem;
+			align-items: center;
+		}
+
+		.partner-content.image-right .partner-text {
+			order: 1;
+		}
+
+		.partner-content.image-right .partner-image-square {
+			order: 2;
+		}
+
+		.partner-image-square {
+			max-width: 500px;
+			width: 100%;
 		}
 	}
 
 	/* ====================================================== */
+
+	.approach-header-with-image {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		justify-self: center;
+		max-width: 1200px;
+		width: 100%;
+	}
+
+	.approach-image-square {
+		width: 100%;
+		aspect-ratio: 3 / 2;
+		object-fit: cover;
+		border-radius: 1rem;
+		box-shadow: var(--shadow-md);
+		flex-shrink: 0;
+	}
+
+	.approach-content {
+		justify-self: center;
+		max-width: 1200px;
+		width: 100%;
+	}
 
 	.three-columns {
 		display: flex;
@@ -366,6 +540,28 @@ import Hero from '../components/Hero.astro';
 	}
 
 	@media (min-width: 50em) {
+		.approach-header-with-image {
+			grid-column: 1 / -1;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 3rem;
+			align-items: center;
+		}
+
+		.approach-header-with-image .section-header {
+			justify-self: start;
+			text-align: left;
+		}
+
+		.approach-image-square {
+			max-width: 500px;
+			width: 100%;
+		}
+
+		.approach-content {
+			grid-column: 1 / -1;
+		}
+
 		.three-columns {
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
@@ -398,6 +594,17 @@ import Hero from '../components/Hero.astro';
 		border-radius: 1.5rem;
 		background: var(--gradient-subtle);
 		box-shadow: var(--shadow-sm);
+		position: relative;
+		overflow: hidden;
+	}
+
+	.package-image {
+		width: 100%;
+		height: auto;
+		max-height: 180px;
+		object-fit: contain;
+		margin-bottom: 0.5rem;
+		border-radius: 0.75rem;
 	}
 
 	.package-card h3 {
@@ -470,6 +677,24 @@ import Hero from '../components/Hero.astro';
 
 	/* ====================================================== */
 
+	.wins-content {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+		justify-self: center;
+		max-width: 1200px;
+		width: 100%;
+	}
+
+	.wins-image-square {
+		width: 100%;
+		aspect-ratio: 3 / 2;
+		object-fit: cover;
+		border-radius: 1rem;
+		box-shadow: var(--shadow-md);
+		flex-shrink: 0;
+	}
+
 	.wins-grid {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -502,6 +727,35 @@ import Hero from '../components/Hero.astro';
 	}
 
 	@media (min-width: 50em) {
+		.wins-content {
+			grid-area: content;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 3rem;
+			align-items: start;
+		}
+
+		.wins-content.image-left .wins-image-square {
+			order: 1;
+		}
+
+		.wins-content.image-left .wins-grid {
+			order: 2;
+		}
+
+		.wins-content.image-right .wins-grid {
+			order: 1;
+		}
+
+		.wins-content.image-right .wins-image-square {
+			order: 2;
+		}
+
+		.wins-image-square {
+			max-width: 500px;
+			width: 100%;
+		}
+
 		.wins-grid {
 			grid-template-columns: repeat(2, 1fr);
 			gap: 2rem;
@@ -517,6 +771,28 @@ import Hero from '../components/Hero.astro';
 	}
 
 	/* ====================================================== */
+
+	.partner-content {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+		justify-self: center;
+		max-width: 1200px;
+		width: 100%;
+	}
+
+	.partner-image-square {
+		width: 100%;
+		aspect-ratio: 3 / 2;
+		object-fit: cover;
+		border-radius: 1rem;
+		box-shadow: var(--shadow-md);
+		flex-shrink: 0;
+	}
+
+	.partner-text {
+		flex: 1;
+	}
 
 	.testimonial-placeholder {
 		text-align: center;
@@ -535,6 +811,31 @@ import Hero from '../components/Hero.astro';
 		border-top: 1px solid var(--gray-800);
 		background-color: var(--gray-999_40);
 		box-shadow: var(--shadow-sm);
+		position: relative;
+		overflow: hidden;
+	}
+
+	.final-cta-image-wrapper {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100vw;
+		height: 100%;
+		z-index: -1;
+		pointer-events: none;
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.final-cta-background-image {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		opacity: 0.2;
+		mix-blend-mode: overlay;
 	}
 
 	.final-cta h2 {
@@ -573,5 +874,26 @@ import Hero from '../components/Hero.astro';
 		.cta-buttons :global(a) {
 			font-size: var(--text-lg);
 		}
+	}
+
+	/* ====================================================== */
+
+	.contact-cta-wrapper {
+		position: relative;
+		overflow: hidden;
+	}
+
+	.contact-cta-background-image {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100vw;
+		height: 100%;
+		z-index: -1;
+		pointer-events: none;
+		object-fit: cover;
+		opacity: 0.2;
+		mix-blend-mode: overlay;
 	}
 </style>
